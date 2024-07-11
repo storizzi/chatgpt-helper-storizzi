@@ -86,16 +86,6 @@ Future features will include things like:
 * Selecting from multiple code blocks
 * Looking for the chat prompt block to finish rather than relying purely on the long timeout
 * Getting the full last ChatGPT response onto the clipboard
-* Integration with Chatblox via web service to do things like:
-  * 'Pairing' plugin with instance of ChatBlox web service (e.g. using localhost or other endpoint)
-  * Watch for specific text and trigger execution of commands in Chatblox when the text comes up
-  * Start a new session
-  * Get a list of available sessions from ChatGPT
-  * Go to a specific session in ChatGPT
-  * Issue a request from Chatblox and get a response from ChatGPT and store the response in Chatblox
-  * Pull details from a response to update a coding (or other) project on Chatblox
-  * Use automated prompts for whatever purposes required
-  * Run stuff on Chatblox project and get back error message responses, and auto-paste into ChatGPT
-  * Whatever else makes sense to do!
+* Integration with Chatblox via web service to share various tooling (optionally)
 
 Note the Chatblox stuff is highly speculative at the moment, as this is in its early stages of development
