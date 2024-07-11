@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Helper by Storizzi",
+    "version": "0.01",
+    "description": "Automatically clicks the 'Continue Generating' button on ChatGPT and copies the last generated code block to the  clipboard.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting",
+      "clipboardWrite"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://chatgpt.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+  

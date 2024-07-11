@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Click Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Auto Click Settings</h2>
+    <label for="enable-checking">Enable Checking:</label>
+    <input type="checkbox" id="enable-checking">
+    <br>
+    <div id="checking-settings" style="border: 1px solid #ccc; padding: 10px; margin-top: 10px;">
+      <label for="short-interval">Check Interval (seconds):</label>
+      <select id="short-interval">
+        <option value="5">5s</option>
+        <option value="10">10s</option>
+        <option value="15">15s</option>
+        <option value="20">20s</option>
+        <option value="25">25s</option>
+        <option value="30">30s</option>
+      </select>
+      <br>
+      <label for="long-timeout">Timeout After (intervals):</label>
+      <select id="long-timeout">
+        <option value="1">1 interval</option>
+        <option value="2">2 intervals</option>
+        <option value="3">3 intervals</option>
+        <option value="4">4 intervals</option>
+        <option value="5">5 intervals</option>
+        <option value="6">6 intervals</option>
+        <option value="7">7 intervals</option>
+        <option value="8">8 intervals</option>
+        <option value="9">9 intervals</option>
+        <option value="10">10 intervals</option>
+        <option value="11">11 intervals</option>
+        <option value="12">12 intervals</option>
+        <option value="13">13 intervals</option>
+        <option value="14">14 intervals</option>
+        <option value="15">15 intervals</option>
+        <option value="16">16 intervals</option>
+        <option value="17">17 intervals</option>
+        <option value="18">18 intervals</option>
+        <option value="19">19 intervals</option>
+        <option value="20">20 intervals</option>
+      </select>
+      <br>
+      <label for="copy-code-block">Copy code block after timeout:</label>
+      <input type="checkbox" id="copy-code-block">
+      <br>
+      <label for="enable-sound">Enable Sound:</label>
+      <input type="checkbox" id="enable-sound">
+      <br>
+      <div id="tone-settings" style="border: 1px solid #ccc; padding: 10px; margin-top: 10px;">
+        <label for="base-frequency">Base Tone Frequency (Hz):</label>
+        <select id="base-frequency">
+          <option value="100">100Hz</option>
+          <option value="200">200Hz</option>
+          <option value="300">300Hz</option>
+          <option value="400">400Hz</option>
+          <option value="500">500Hz</option>
+          <option value="600">600Hz</option>
+          <option value="700">700Hz</option>
+          <option value="800">800Hz</option>
+          <option value="900">900Hz</option>
+          <option value="1000">1000Hz</option>
+        </select>
+        <br>
+        <label for="enable-interval-sound">Enable Interval Sound:</label>
+        <input type="checkbox" id="enable-interval-sound">
+        <br>
+        <label for="increase-frequency">Increase Frequency for Interval Tone:</label>
+        <input type="checkbox" id="increase-frequency">
+      </div>
+    </div>
+    <br>
+    <button id="copy-last-code-block">Copy Last Code Block</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
